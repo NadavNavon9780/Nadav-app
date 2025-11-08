@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const APP_NAME = "Starter Kit";
 export const COURSE_GITHUB = "https://github.com/product-jam-2025";
 export const COURSE_CREDITS = "Product Jam 2025";
@@ -33,6 +35,16 @@ export const DEMOS = [
     slug: "/random",
     description:
       "An example of a fully functional application that builds random teams and product ideas from this year's students.",
+  },
+  {
+    title: "Tic Tac Toe Game",
+    slug: "../tic-tac-toe",
+    description: "An example of a fully functional game.",
+  },
+  {
+    title: "Nasa Data",
+    slug: "../nasa",
+    description: "An example for fetching data.",
   },
 ];
 
