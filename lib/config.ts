@@ -42,8 +42,8 @@ export const DEMOS = [
     description: "An example of a fully functional game.",
   },
   {
-    title: "Nasa Data",
-    slug: "../nasa",
+    title: "Art Data",
+    slug: "../art",
     description: "An example for fetching data.",
   },
 ];
