@@ -1,5 +1,3 @@
-// app/art/getArtData.ts
-
 export interface ArtObject {
   title: string;
   artistDisplayName: string;
@@ -11,17 +9,12 @@ export interface ArtObject {
 
 const BASE_URL = "https://collectionapi.metmuseum.org/public/collection/v1";
 
-/**
- * Fetches random artworks from a specific department of the Met Museum.
- * @param departmentId - The ID of the department to fetch from.
- * @param count - Number of artworks to return.
- */
 export async function getArtData(
   departmentId: string,
   count: number
 ): Promise<ArtObject[]> {
   try {
-    // 1️⃣ Fetch all object IDs for the given department
+    // fetch all object IDs for the given department
     const resIds = await fetch(
       `${BASE_URL}/objects?departmentIds=${departmentId}`
     );
@@ -32,12 +25,12 @@ export async function getArtData(
       throw new Error("No art found for this department.");
     }
 
-    // 2️⃣ Randomly select 'count' IDs
+    // randomly select 'count' IDs
     const chosenIds = idsData.objectIDs
       .sort(() => 0.5 - Math.random())
       .slice(0, count);
 
-    // 3️⃣ Fetch object details for selected IDs
+    // fetch object details for selected IDs
     const artPromises = chosenIds.map(async (id: number) => {
       const resObj = await fetch(`${BASE_URL}/objects/${id}`);
       if (!resObj.ok) throw new Error(`Error fetching object ${id}`);
@@ -53,7 +46,7 @@ export async function getArtData(
       };
     });
 
-    // 4️⃣ Return simplified array
+    // return simplified array
     return await Promise.all(artPromises);
   } catch (err: any) {
     console.error(err);

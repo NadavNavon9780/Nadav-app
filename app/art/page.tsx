@@ -1,4 +1,3 @@
-// app/art/page.tsx
 import { getArtData } from "./getArtData";
 import styles from "./artPage.module.css";
 import { getDepartmentName } from "./getDepartment";
