@@ -46,6 +46,11 @@ export const DEMOS = [
     slug: "../art",
     description: "An example for fetching data.",
   },
+  {
+    title: "DouGami Page",
+    slug: "../design",
+    description: "Anya and Nadav's Page",
+  },
 ];
 
 export const EMAIL_ADDRESS = process.env.EMAIL_ADDRESS || "";
