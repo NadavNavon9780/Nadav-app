@@ -4,7 +4,7 @@ import { AuthAction } from "./AuthAction";
 export default function Footer() {
   return (
     <footer>
-      <p>Nadavs website</p>
+      <p>Made by Nadav Navon</p>
       <p>
         <AuthAction /> | {COURSE_CREDITS}
       </p>

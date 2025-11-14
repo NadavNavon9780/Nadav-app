@@ -1,6 +1,6 @@
 import { title } from "process";
 
-export const APP_NAME = "Starter Kit";
+export const APP_NAME = "Nadav's Website";
 export const COURSE_GITHUB = "https://github.com/product-jam-2025";
 export const COURSE_CREDITS = "Product Jam 2025";
 
