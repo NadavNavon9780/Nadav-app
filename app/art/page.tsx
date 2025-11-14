@@ -3,7 +3,7 @@ import styles from "./artPage.module.css";
 import { getDepartmentName } from "./getDepartment";
 
 export default async function ArtPage() {
-  const departmentId = "1";
+  const departmentId = "4";
   const art = await getArtData(departmentId, 6); // Fetches on server before render
   const departmentTitle = await getDepartmentName(departmentId);
 
