@@ -21,21 +21,20 @@ export default function Board() {
     setXIsNext(!xIsNext);
   }
 
-  function handleReset() {
+  function isFull() {
     let isFull = true;
     for (let i = 0; i < squares.length; i++) {
       if (!squares[i]) {
         isFull = false;
       }
     }
+    return isFull;
+  }
 
-    if (calculateWinner(squares) || isFull) {
-      setSquares(Array(9).fill(null));
-      setXIsNext(true);
-      setMessage("");
-    } else {
-      setMessage("Game not finished!");
-    }
+  function handleReset() {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+    setMessage("");
   }
 
   const winner = calculateWinner(squares);
@@ -44,6 +43,9 @@ export default function Board() {
     status = "The winner is " + winner + "!";
   } else {
     status = "Next player: " + (xIsNext ? "X" : "O");
+    if (isFull()) {
+      status = "It's a Tie!";
+    }
   }
 
   return (
@@ -82,7 +84,7 @@ function PlayAgain({ onPlayAgainClick }) {
   return (
     <>
       <button onClick={onPlayAgainClick} className={styles.reset}>
-        Play again?
+        Reset Game
       </button>
     </>
   );
