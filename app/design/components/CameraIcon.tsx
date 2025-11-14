@@ -4,17 +4,22 @@ import { useState } from "react";
 import styles from "../design.module.css"; // or your CSS module
 
 export default function CameraIcon() {
-  const [hovered, setHovered] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active); // toggle image on click
+  };
 
   return (
     <img
-      src={hovered ? "/icons/Camera 2.svg" : "/icons/Camera.svg"} // switch images
-      alt="Crane Icon"
+      src={active || active ? "/icons/Camera 2.svg" : "/icons/Camera.svg"} // swap on hover or click
+      alt="Camera Icon"
       className={`${styles.aboutIcon} ${styles.cameraIcon}`}
       width={24}
       height={24}
-      onMouseEnter={() => setHovered(true)} // hover start
-      onMouseLeave={() => setHovered(false)} // hover end
+      onMouseEnter={() => setActive(true)} // hover start
+      onMouseLeave={() => setActive(false)} // hover end
+      onClick={handleClick} // toggle on click
     />
   );
 }

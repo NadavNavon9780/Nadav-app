@@ -4,17 +4,22 @@ import { useState } from "react";
 import styles from "../design.module.css"; // or your CSS module
 
 export default function BlobIcon() {
-  const [hovered, setHovered] = useState(false);
+  const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active); // toggle image on click
+  };
 
   return (
     <img
-      src={hovered ? "/icons/Blob 2.svg" : "/icons/Blob.svg"} // switch images
+      src={active ? "/icons/Blob 2.svg" : "/icons/Blob.svg"} // swap on hover or click
       alt="Blob Icon"
       className={`${styles.aboutIcon} ${styles.blobIcon}`}
       width={24}
       height={24}
-      onMouseEnter={() => setHovered(true)} // hover start
-      onMouseLeave={() => setHovered(false)} // hover end
+      onMouseEnter={() => setActive(true)} // hover start
+      onMouseLeave={() => setActive(false)} // hover end
+      onClick={handleClick} // toggle on click
     />
   );
 }
