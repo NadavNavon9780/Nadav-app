@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "AlegreyaVariable";
+  src: url("/fonts/Alegreya-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900; /* variable font weight range */
+  font-style: normal;
+  font-display: swap;
+}
+
 .pageBackground {
   background-color: #314ff8; /* light blue */
   width: 100%;
@@ -12,6 +20,7 @@
   width: 90%; /* narrower page so blue shows on sides */
   max-width: 500px; /* controls how narrow */
   min-width: 250px;
+  font-family: "AlegreyaVariable", serif;
 
   padding: 20px;
   border-radius: 12px; /* optional: smooth edges */
@@ -28,36 +37,35 @@
 
 .logo {
   position: relative;
-  top: 30px;
+  top: 35px;
   width: 40px;
   height: auto;
   margin: 0;
 }
 
 .mainTitle {
-  font-family: "Masada", sans-serif;
   font-weight: 500; /* Medium weight */
   font-size: 56px;
   letter-spacing: 8%; /* percentage spacing */
   color: #314ff8;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
 }
 
 .subtitle {
   position: relative;
   bottom: 20px;
-  font-family: "Masada", sans-serif;
   font-weight: 400; /* Book weight */
   font-size: 16px;
   letter-spacing: 10%; /* percentage spacing */
   color: #314ff8;
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .aboutTitle {
-  font-family: "Masada", sans-serif;
+  position: relative;
+  right: 50px;
   font-weight: 500; /* Medium */
   font-size: 32px;
   color: #000000;
@@ -67,7 +75,6 @@
 }
 
 .paragraph {
-  font-family: "Masada", sans-serif;
   font-weight: 300; /* Light */
   font-size: 15px;
   line-height: 18px; /* spacing between lines */
@@ -116,12 +123,13 @@
 }
 
 .stepTitle {
-  font-family: "Masada", sans-serif;
+  position: relative;
+  right: 30px;
   font-weight: 550; /* Medium */
   font-size: 32px;
   line-height: auto; /* let the browser calculate */
   color: #000000;
-  margin: 0 0 15px 0; /* optional: space below the title */
+  margin: 0 0 5px 0; /* optional: space below the title */
   text-align: left; /* or center, depending on design */
 }
 
@@ -140,11 +148,20 @@
 }
 
 .sponsorText {
-  font-family: "Masada", sans-serif;
   font-size: 14px;
   font-weight: 300; /* light */
   color: #000000;
   margin: 0;
+}
+
+.sponsorLink {
+  font-weight: bold;
+  color: #000000; /* black */
+  text-decoration: none; /* remove underline */
+}
+
+.sponsorLink:hover {
+  text-decoration: underline; /* optional: show underline on hover */
 }
 
 .corner {

@@ -87,7 +87,7 @@ export default function DesignPage() {
             <CraneIcon />
           </div>
 
-          <h1 className={styles.stepTitle}>Step By Step:</h1>
+          <h1 className={styles.stepTitle}>Step by step:</h1>
           <p className={styles.paragraph}>
             Users can learn step by step, track their progress, share their
             creations, and connect with other origami enthusiasts around the
@@ -114,7 +114,15 @@ export default function DesignPage() {
               className={styles.sponsorImage}
             />
             <p className={styles.sponsorText}>
-              Sponsored by: <strong>ORIGAMISRAEL</strong>
+              Sponsored by:{" "}
+              <a
+                href="https://origamisrael.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.sponsorLink}
+              >
+                ORIGAMISRAEL
+              </a>
             </p>
           </div>
         </div>
