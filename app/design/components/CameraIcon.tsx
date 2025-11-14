@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../design.module.css"; // or your CSS module
+import styles from "../design.module.css";
 
 export default function CameraIcon() {
   const [active, setActive] = useState(false);

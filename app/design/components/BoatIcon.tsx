@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../design.module.css"; // adjust path
+import styles from "../design.module.css";
 
 export default function BoatIcon() {
   const [moved, setMoved] = useState(false);
 
   const handleClick = () => {
-    setMoved(true); // triggers glide
+    setMoved(true);
   };
 
   return (

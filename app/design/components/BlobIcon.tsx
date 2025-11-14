@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import styles from "../design.module.css"; // or your CSS module
+import styles from "../design.module.css";
 
 export default function BlobIcon() {
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
-    setActive(!active); // toggle image on click
+    setActive(!active);
   };
 
   return (

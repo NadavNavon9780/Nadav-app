@@ -1,7 +1,7 @@
 @font-face {
   font-family: "AlegreyaVariable";
   src: url("/fonts/Alegreya-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900; /* variable font weight range */
+  font-weight: 100 900;
   font-style: normal;
   font-display: swap;
 }
@@ -18,20 +18,19 @@
   position: relative;
   background: white;
   width: 90%; /* narrower page so blue shows on sides */
-  max-width: 500px; /* controls how narrow */
+  max-width: 500px;
   min-width: 250px;
   font-family: "AlegreyaVariable", serif;
 
   padding: 20px;
-  border-radius: 12px; /* optional: smooth edges */
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* optional: subtle shadow */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .pageContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px; /* controls space between logo, title, subtitle */
+  gap: 5px;
   text-align: center;
 }
 
@@ -44,9 +43,9 @@
 }
 
 .mainTitle {
-  font-weight: 500; /* Medium weight */
+  font-weight: 500;
   font-size: 56px;
-  letter-spacing: 8%; /* percentage spacing */
+  letter-spacing: 8%;
   color: #314ff8;
   font-weight: 800;
   margin: 0;
@@ -55,9 +54,9 @@
 .subtitle {
   position: relative;
   bottom: 20px;
-  font-weight: 400; /* Book weight */
+  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 10%; /* percentage spacing */
+  letter-spacing: 10%;
   color: #314ff8;
   margin: 0;
   font-weight: 500;
@@ -75,25 +74,25 @@
 }
 
 .paragraph {
-  font-weight: 300; /* Light */
+  font-weight: 300;
   font-size: 15px;
   line-height: 18px; /* spacing between lines */
   color: #000000;
   width: 233px;
-  height: 107px; /* optional; usually line-height + lines handle it */
-  margin: 0; /* remove default margin */
-  text-align: left; /* or center depending on your layout */
+  height: 107px;
+  margin: 0;
+  text-align: left;
 }
 
 .aboutItem {
-  display: flex; /* align icon and paragraph horizontally */
-  align-items: flex-start; /* top-align icon with text */
-  gap: 10px; /* space between icon and paragraph */
-  margin-top: 10px; /* space from previous element */
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .aboutIcon {
-  width: auto; /* size of icon */
+  width: auto;
   height: auto;
   flex-shrink: 0; /* prevent icon from shrinking */
   margin-top: 70px;
@@ -104,22 +103,21 @@
 
 .boatIcon {
   bottom: 25px;
-  /* left: 100px; adjust horizontal if needed */
 }
 
 .craneIcon {
   bottom: 30px;
-  left: 100px; /* adjust horizontal if needed */
+  left: 100px;
 }
 
 .cameraIcon {
-  bottom: 50px; /* move down 10px */
-  left: 7px; /* adjust horizontal if needed */
+  bottom: 50px;
+  left: 7px;
 }
 
 .blobIcon {
-  bottom: 50px; /* move down 10px */
-  left: 7px; /* adjust horizontal if needed */
+  bottom: 50px;
+  left: 7px;
 }
 
 .stepTitle {
@@ -129,16 +127,16 @@
   font-size: 32px;
   line-height: auto; /* let the browser calculate */
   color: #000000;
-  margin: 0 0 5px 0; /* optional: space below the title */
-  text-align: left; /* or center, depending on design */
+  margin: 0 0 5px 0;
+  text-align: left;
 }
 
 .sponsorRow {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* small space between image and text */
-  margin-top: 30px; /* spacing from the content above */
+  gap: 8px;
+  margin-top: 30px;
 }
 
 .sponsorImage {
@@ -149,26 +147,26 @@
 
 .sponsorText {
   font-size: 14px;
-  font-weight: 300; /* light */
+  font-weight: 300;
   color: #000000;
   margin: 0;
 }
 
 .sponsorLink {
   font-weight: bold;
-  color: #000000; /* black */
-  text-decoration: none; /* remove underline */
+  color: #000000;
+  text-decoration: none;
 }
 
 .sponsorLink:hover {
-  text-decoration: underline; /* optional: show underline on hover */
+  text-decoration: underline;
 }
 
 .corner {
   width: 70px;
   height: 70px;
   position: absolute;
-  background: white; /* initial square color */
+  background: white;
   cursor: pointer;
   overflow: hidden;
   z-index: 10;
@@ -206,7 +204,6 @@
   background-color: rgb(204, 199, 199);
 }
 
-/* Top Right */
 .topRight .triangleBlue {
   clip-path: polygon(0 0, 100% 0, 100% 100%);
   background-color: #314ff8;
@@ -216,7 +213,6 @@
   background-color: rgb(204, 199, 199);
 }
 
-/* Bottom Left */
 .bottomLeft .triangleBlue {
   clip-path: polygon(0 0, 0 110%, 100% 100%);
   background-color: #314ff8;
@@ -226,7 +222,6 @@
   background-color: rgb(204, 199, 199);
 }
 
-/* Bottom Right */
 .bottomRight .triangleBlue {
   clip-path: polygon(0 110%, 100% 0, 100% 110%);
   background-color: #314ff8;
@@ -251,10 +246,6 @@
 .bottomRight {
   bottom: 0;
   right: 0;
-}
-
-.mobileAdjust {
-  /* This is a local class we can reference */
 }
 
 @media (max-width: 480px) {

@@ -1,8 +1,6 @@
-// page.tsx
 "use client";
 
 import React from "react";
-// import MyComponent from "./MyComponent";
 import styles from "./design.module.css";
 import CraneIcon from "./components/CraneIcon";
 import BoatIcon from "./components/BoatIcon";
@@ -64,11 +62,8 @@ export default function DesignPage() {
             alt="DuoGami Logo"
             className={styles.logo}
           />
-          {/* Main title */}
           <h1 className={styles.mainTitle}>DuoGami</h1>
-          {/* Subtitle */}
           <p className={styles.subtitle}>Fold. Learn. Create.</p>
-
           {/* About section */}
           <h2 className={styles.aboutTitle}>About Us:</h2>
           <p className={styles.paragraph}>
