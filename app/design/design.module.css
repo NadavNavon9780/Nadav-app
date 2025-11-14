@@ -1,0 +1,266 @@
+.pageBackground {
+  background-color: #314ff8; /* light blue */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* center white page horizontally */
+  padding: 40px 0; /* top + bottom spacing */
+}
+.paperWrapper {
+  position: relative;
+  background: white;
+  width: 90%; /* narrower page so blue shows on sides */
+  max-width: 500px; /* controls how narrow */
+  min-width: 250px;
+
+  padding: 20px;
+  border-radius: 12px; /* optional: smooth edges */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* optional: subtle shadow */
+}
+
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* controls space between logo, title, subtitle */
+  text-align: center;
+}
+
+.logo {
+  position: relative;
+  top: 30px;
+  width: 40px;
+  height: auto;
+  margin: 0;
+}
+
+.mainTitle {
+  font-family: "Masada", sans-serif;
+  font-weight: 500; /* Medium weight */
+  font-size: 56px;
+  letter-spacing: 8%; /* percentage spacing */
+  color: #314ff8;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subtitle {
+  position: relative;
+  bottom: 20px;
+  font-family: "Masada", sans-serif;
+  font-weight: 400; /* Book weight */
+  font-size: 16px;
+  letter-spacing: 10%; /* percentage spacing */
+  color: #314ff8;
+  margin: 0;
+  font-weight: 400;
+}
+
+.aboutTitle {
+  font-family: "Masada", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 32px;
+  color: #000000;
+  font-weight: 600;
+  margin: 0;
+  text-align: left; /* or center depending on design */
+}
+
+.paragraph {
+  font-family: "Masada", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 15px;
+  line-height: 18px; /* spacing between lines */
+  color: #000000;
+  width: 233px;
+  height: 107px; /* optional; usually line-height + lines handle it */
+  margin: 0; /* remove default margin */
+  text-align: left; /* or center depending on your layout */
+}
+
+.aboutItem {
+  display: flex; /* align icon and paragraph horizontally */
+  align-items: flex-start; /* top-align icon with text */
+  gap: 10px; /* space between icon and paragraph */
+  margin-top: 10px; /* space from previous element */
+}
+
+.aboutIcon {
+  width: auto; /* size of icon */
+  height: auto;
+  flex-shrink: 0; /* prevent icon from shrinking */
+  margin-top: 70px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 130px;
+}
+
+.boatIcon {
+  bottom: 25px;
+  /* left: 100px; adjust horizontal if needed */
+}
+
+.craneIcon {
+  bottom: 30px;
+  left: 100px; /* adjust horizontal if needed */
+}
+
+.cameraIcon {
+  bottom: 50px; /* move down 10px */
+  left: 7px; /* adjust horizontal if needed */
+}
+
+.blobIcon {
+  bottom: 50px; /* move down 10px */
+  left: 7px; /* adjust horizontal if needed */
+}
+
+.stepTitle {
+  font-family: "Masada", sans-serif;
+  font-weight: 550; /* Medium */
+  font-size: 32px;
+  line-height: auto; /* let the browser calculate */
+  color: #000000;
+  margin: 0 0 15px 0; /* optional: space below the title */
+  text-align: left; /* or center, depending on design */
+}
+
+.sponsorRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* small space between image and text */
+  margin-top: 30px; /* spacing from the content above */
+}
+
+.sponsorImage {
+  width: 50px; /* small icon */
+  height: 50px;
+  object-fit: contain;
+}
+
+.sponsorText {
+  font-family: "Masada", sans-serif;
+  font-size: 14px;
+  font-weight: 300; /* light */
+  color: #000000;
+  margin: 0;
+}
+
+.corner {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background: white; /* initial square color */
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.triangleBlue,
+.triangleGray {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.topLeft.folded .triangleBlue,
+.topRight.folded .triangleBlue,
+.bottomLeft.folded .triangleBlue,
+.bottomRight.folded .triangleBlue {
+  display: block;
+}
+
+.topLeft.folded .triangleGray,
+.topRight.folded .triangleGray,
+.bottomLeft.folded .triangleGray,
+.bottomRight.folded .triangleGray {
+  display: block;
+}
+
+.topLeft .triangleBlue {
+  clip-path: polygon(0 0, 0 100%, 100% 0);
+  background-color: #314ff8;
+}
+.topLeft .triangleGray {
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  background-color: rgb(204, 199, 199);
+}
+
+/* Top Right */
+.topRight .triangleBlue {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  background-color: #314ff8;
+}
+.topRight .triangleGray {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  background-color: rgb(204, 199, 199);
+}
+
+/* Bottom Left */
+.bottomLeft .triangleBlue {
+  clip-path: polygon(0 0, 0 110%, 100% 100%);
+  background-color: #314ff8;
+}
+.bottomLeft .triangleGray {
+  clip-path: polygon(0 0, 100% 0, 100% 110%);
+  background-color: rgb(204, 199, 199);
+}
+
+/* Bottom Right */
+.bottomRight .triangleBlue {
+  clip-path: polygon(0 110%, 100% 0, 100% 110%);
+  background-color: #314ff8;
+}
+.bottomRight .triangleGray {
+  clip-path: polygon(0 0, 100% 0, 0 110%);
+  background-color: rgrgb(204, 199, 199);
+}
+
+.topLeft {
+  top: 0;
+  left: 0;
+}
+.topRight {
+  top: 0;
+  right: 0;
+}
+.bottomLeft {
+  bottom: 0;
+  left: 0;
+}
+.bottomRight {
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 480px) {
+  .paperWrapper {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  .paragraph {
+    width: 180px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .stepTitle,
+  .aboutTitle {
+    font-size: 24px;
+  }
+
+  .aboutIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .corner {
+    width: 50px;
+    height: 50px;
+  }
+  .logo {
+    width: 30px;
+  }
+}

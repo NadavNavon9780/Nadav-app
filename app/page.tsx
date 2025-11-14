@@ -9,6 +9,10 @@ export default function Home() {
           Feel free to look around, edit the source code and navigate to the
           demos.
         </p>
+
+        <p>
+          <a href="./design">**Go to Dougami (Design Page)**</a>
+        </p>
         <Image
           src="/huji.svg"
           alt="HUJI Logo"
