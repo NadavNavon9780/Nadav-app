@@ -233,7 +233,7 @@
 }
 .bottomRight .triangleGray {
   clip-path: polygon(0 0, 100% 0, 0 110%);
-  background-color: rgrgb(204, 199, 199);
+  background-color: rgb(204, 199, 199);
 }
 
 .topLeft {
@@ -253,6 +253,10 @@
   right: 0;
 }
 
+.mobileAdjust {
+  /* This is a local class we can reference */
+}
+
 @media (max-width: 480px) {
   .paperWrapper {
     border-radius: 8px;
@@ -265,10 +269,8 @@
   }
 
   .boatIcon {
-    position: relative;
-    left: 40px;
+    margin-left: 70px;
   }
-
   .stepTitle,
   .aboutTitle {
     font-size: 24px;
@@ -278,11 +280,13 @@
     width: 140px;
     height: 140px;
   }
-  .corner {
-    width: 50px;
-    height: 50px;
+
+  .cameraIcon {
+    width: 240px;
+    height: 240px;
   }
-  .logo {
-    width: 60px;
+  .corner {
+    width: 55px;
+    height: 55px;
   }
 }
