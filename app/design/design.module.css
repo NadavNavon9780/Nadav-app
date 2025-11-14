@@ -260,8 +260,13 @@
   }
   .paragraph {
     width: 180px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 17px;
+  }
+
+  .boatIcon {
+    position: relative;
+    left: 40px;
   }
 
   .stepTitle,
@@ -278,6 +283,6 @@
     height: 50px;
   }
   .logo {
-    width: 30px;
+    width: 60px;
   }
 }
