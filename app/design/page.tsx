@@ -104,7 +104,7 @@ export default function DesignPage() {
 
           <div className={styles.sponsorRow}>
             <img
-              src="/icons/image 1.svg"
+              src="/icons/logo.png"
               alt="Sponsor Logo"
               className={styles.sponsorImage}
             />

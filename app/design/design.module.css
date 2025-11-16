@@ -1,6 +1,22 @@
 @font-face {
-  font-family: "AlegreyaVariable";
-  src: url("/fonts/Alegreya-VariableFont_wght.ttf") format("truetype");
+  font-family: "Masada-Bold";
+  src: url("/fonts.Masada-Bold.otf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Masada-Medium";
+  src: url("/fonts/Masada-Medium.otf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Masada-Light";
+  src: url("/fonts/Masada-Light.otf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -20,7 +36,7 @@
   width: 90%; /* narrower page so blue shows on sides */
   max-width: 500px;
   min-width: 250px;
-  font-family: "AlegreyaVariable", serif;
+  font-family: "Masada-Bold", serif;
 
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
@@ -43,7 +59,7 @@
 }
 
 .mainTitle {
-  font-weight: 500;
+  font-family: "Masada-Medium";
   font-size: 56px;
   letter-spacing: 8%;
   color: #314ff8;
@@ -52,10 +68,11 @@
 }
 
 .subtitle {
+  font-family: "Masada-Light";
   position: relative;
   bottom: 20px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 10%;
   color: #314ff8;
   margin: 0;
@@ -63,6 +80,7 @@
 }
 
 .aboutTitle {
+  font-family: "Masada-Medium";
   position: relative;
   right: 50px;
   font-weight: 500; /* Medium */
@@ -74,6 +92,7 @@
 }
 
 .paragraph {
+  font-family: "Masada-Light";
   font-weight: 300;
   font-size: 15px;
   line-height: 18px; /* spacing between lines */
@@ -121,6 +140,7 @@
 }
 
 .stepTitle {
+  font-family: "Masada-Medium";
   position: relative;
   right: 30px;
   font-weight: 550; /* Medium */
@@ -140,12 +160,13 @@
 }
 
 .sponsorImage {
-  width: 50px; /* small icon */
-  height: 50px;
+  width: 80px; /* small icon */
+  height: auto;
   object-fit: contain;
 }
 
 .sponsorText {
+  font-family: "Masada-Light";
   font-size: 14px;
   font-weight: 300;
   color: #000000;
@@ -153,6 +174,7 @@
 }
 
 .sponsorLink {
+  font-family: "Masada-Bold";
   font-weight: bold;
   color: #000000;
   text-decoration: none;
