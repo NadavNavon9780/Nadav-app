@@ -8,10 +8,10 @@ import BlobIcon from "./components/BlobIcon";
 import CameraIcon from "./components/CameraIcon";
 
 export default function DesignPage() {
-  const [foldTL, setFoldTL] = React.useState(true);
-  const [foldTR, setFoldTR] = React.useState(false);
-  const [foldBL, setFoldBL] = React.useState(false);
-  const [foldBR, setFoldBR] = React.useState(true);
+  const [foldTL, setFoldTL] = React.useState(false);
+  const [foldTR, setFoldTR] = React.useState(true);
+  const [foldBL, setFoldBL] = React.useState(true);
+  const [foldBR, setFoldBR] = React.useState(false);
 
   return (
     <div className={styles.pageBackground}>

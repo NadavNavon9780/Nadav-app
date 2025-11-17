@@ -28,7 +28,7 @@
   min-height: 100vh;
   display: flex;
   justify-content: center; /* center white page horizontally */
-  padding: 40px 0; /* top + bottom spacing */
+  padding: 20px 0; /* top + bottom spacing */
 }
 .paperWrapper {
   position: relative;
@@ -37,8 +37,8 @@
   max-width: 500px;
   min-width: 250px;
   font-family: "Masada-Bold", serif;
-
-  padding: 20px;
+  /* margin-bottom: 20px; */
+  /* padding: 10px; */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -46,13 +46,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
   text-align: center;
 }
 
 .logo {
   position: relative;
-  top: 35px;
+  left: 5px;
+  top: 81px;
   width: 40px;
   height: auto;
   margin: 0;
@@ -60,11 +60,11 @@
 
 .mainTitle {
   font-family: "Masada-Medium";
-  font-size: 56px;
-  letter-spacing: 8%;
+  font-size: 60px;
+  letter-spacing: 3px;
   color: #314ff8;
   font-weight: 800;
-  margin: 0;
+  margin-top: 50px;
 }
 
 .subtitle {
@@ -82,19 +82,19 @@
 .aboutTitle {
   font-family: "Masada-Medium";
   position: relative;
-  right: 50px;
+  right: 45px;
   font-weight: 500; /* Medium */
   font-size: 32px;
   color: #000000;
   font-weight: 600;
-  margin: 0;
-  text-align: left; /* or center depending on design */
+  margin-top: 30px;
+  text-align: left;
 }
 
 .paragraph {
   font-family: "Masada-Light";
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 18px; /* spacing between lines */
   color: #000000;
   width: 233px;
@@ -104,9 +104,9 @@
 }
 
 .aboutItem {
-  display: flex;
+  /* display: flex; */
   align-items: flex-start;
-  gap: 10px;
+  /* gap: 10px; */
   margin-top: 10px;
 }
 
@@ -114,35 +114,41 @@
   width: auto;
   height: auto;
   flex-shrink: 0; /* prevent icon from shrinking */
-  margin-top: 70px;
-  margin-bottom: 10px;
   position: relative;
-  right: 130px;
 }
 
 .boatIcon {
   bottom: 25px;
+  margin-top: 110px;
+  margin-bottom: 50px;
 }
 
 .craneIcon {
-  bottom: 30px;
+  bottom: 15px;
   left: 100px;
+  margin-bottom: 10px;
 }
 
 .cameraIcon {
-  bottom: 50px;
+  height: 200px;
+  bottom: 25px;
   left: 7px;
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 
 .blobIcon {
-  bottom: 50px;
+  height: 150px;
+  bottom: 40px;
   left: 7px;
+  padding: 0;
+  margin-top: 80px;
 }
 
 .stepTitle {
   font-family: "Masada-Medium";
   position: relative;
-  right: 30px;
+  right: 20px;
   font-weight: 550; /* Medium */
   font-size: 32px;
   line-height: auto; /* let the browser calculate */
@@ -163,6 +169,9 @@
   width: 80px; /* small icon */
   height: auto;
   object-fit: contain;
+  position: relative;
+  left: 18px;
+  top: 8px;
 }
 
 .sponsorText {
@@ -174,8 +183,7 @@
 }
 
 .sponsorLink {
-  font-family: "Masada-Bold";
-  font-weight: bold;
+  font-family: "Masada-Medium";
   color: #000000;
   text-decoration: none;
 }
@@ -276,17 +284,37 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   }
   .paragraph {
-    width: 180px;
+    width: 220px;
     font-size: 17px;
     line-height: 17px;
   }
 
-  .boatIcon {
-    margin-left: 70px;
+  .logo {
+    position: relative;
+    left: 5px;
   }
-  .stepTitle,
+
   .aboutTitle {
-    font-size: 24px;
+    font-size: 27px;
+    position: relative;
+    right: 50px;
+  }
+
+  .boatIcon {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+  }
+
+  .craneIcon {
+    position: relative;
+    margin-right: 35px;
+  }
+
+  .stepTitle {
+    font-size: 27px;
+    position: relative;
+    right: 29px;
   }
 
   .aboutIcon {
@@ -295,11 +323,43 @@
   }
 
   .cameraIcon {
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: auto;
+    position: relative;
+    bottom: 35px;
+    margin-top: 60px;
   }
+
+  .blobIcon {
+    position: relative;
+    bottom: 15px;
+    margin-top: 30px;
+  }
+
+  .sponsorRow {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: auto; /* allow full width */
+    white-space: nowrap; /* prevent line breaks */
+    position: relative;
+    right: 10px;
+  }
+
+  .sponsorText {
+    font-size: 10px;
+    position: relative;
+    right: 13px;
+    top: 5px;
+  }
+
+  .sponsorImage {
+    height: 40px;
+    position: relative;
+    bottom: 40px;
+  }
+
   .corner {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
   }
 }

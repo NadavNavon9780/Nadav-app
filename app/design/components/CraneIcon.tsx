@@ -12,7 +12,7 @@ export default function CraneIcon() {
 
   return (
     <img
-      src={active ? "/icons/Crane 2.png" : "/icons/Crane.svg"} // swap image
+      src={active ? "/icons/Crane 2.svg" : "/icons/Crane.svg"} // swap image
       alt="Crane Icon"
       className={`${styles.aboutIcon} ${styles.craneIcon}`}
       width={24}
