@@ -68,3 +68,49 @@
   cursor: pointer;
   margin-left: 20px;
 }
+
+@media (max-width: 480px) {
+  /* Center each row of squares */
+  .boardRow {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Square size + remove right shift */
+  .square {
+    left: 0; /* removes the 40% push */
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    margin: 2px; /* spacing so they fit */
+  }
+
+  /* Center the status text */
+  .status {
+    left: 0;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Make layout vertical on mobile */
+  .game {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-info {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  /* Center the reset button */
+  .reset {
+    left: 0;
+    font-size: 24px;
+    margin: 20px auto;
+    display: block;
+    width: fit-content;
+  }
+}
